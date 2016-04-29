@@ -30,8 +30,8 @@ var createTab = function(title, image) {
                 alignment: "center"
             }).appendTo(cell);
             cell.on("change:item", function(widget, item) {
-                imageView.set("image", {src: 'https://pongalo.imgix.net/' + item.mediaKey + '/' + item.mediaKey+'_landscape.jpg');
-                nameTextView.set("text", item.title;
+                imageView.set("image", {src: 'https://pongalo.imgix.net/' + item.mediaKey + '/' + item.mediaKey+'_landscape.jpg'});
+                nameTextView.set("text", item.title);
             });
         }
     }).on("select", function(target, value) {
